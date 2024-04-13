@@ -17,8 +17,8 @@ toggleButton.addEventListener("click", () => {
 );
 
 carouselSlide.addEventListener("slide.bs.carousel", () => {
-        const prevVideo = document.querySelector(".carousel-item.active video");     // 이전 비디오를 멈춥니다.
-
+        const prevVideo = document.querySelector(".carousel-item.active video");
+        
         prevVideo.pause();  //이전 영상 정지
         prevVideo.currentTime = 0;
         toggleButton.textContent = "재생";
